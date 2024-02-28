@@ -5,4 +5,4 @@ Disallow:
 # Allow all crawlers
 User-agent: *
 Allow: /
-sitemap: https://toketbocil.pages.dev/sitemap.xml
+sitemap: https://togesd.pages.dev/sitemap.xml
