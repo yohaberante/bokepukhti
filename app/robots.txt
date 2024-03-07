@@ -1,7 +1,7 @@
 # Block all crawlers for /accounts
 User-agent: *
 Disallow:
-/lib
+
 # Allow all crawlers
 User-agent: *
 Allow: /
