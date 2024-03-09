@@ -18,7 +18,7 @@ export default async function Home({
     const query = (searchParams.q && (searchParams.q as string)) || undefined;
 
     return (
-        <div className="md:my-2"><h1>{SITENAME} Video Bokep Indo Terbaru</h1>
+        <div className="md:my-2"><h1>{SITENAME}</h1> <h2>Video Bokep Indo Terbaru</h2>
             {query ? (
                 <SearchCardList query={query} banner />
             ) : (
