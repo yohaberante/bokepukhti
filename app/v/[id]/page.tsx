@@ -85,14 +85,15 @@ export default async function Video({ params }: PageProps) {
                 className="w-full h-[30vh] md:h-[55vh] lg:h-[70vh]"
                 src={`https://${upstream}/${file.protected_embed}`}
                 scrolling="no"
+                title={'file.title'}
                 frameBorder={0}
                 allowFullScreen={true}
             ></iframe>
             <Card className="mx-2 mb-8">
-                <CardHeader><h1>
+                <CardHeader>
                     <CardTitle className="text-xl md:text-3xl font-bold">
-                        {file.title}
-                    </CardTitle></h1>
+                        <h1>{file.title}</h1>
+                    </CardTitle>
                 </CardHeader>
                 <CardContent>
                     <div className="grid grid-flow-row lg:grid-flow-col">
