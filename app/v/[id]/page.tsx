@@ -85,14 +85,14 @@ export default async function Video({ params }: PageProps) {
                 className="w-full h-[30vh] md:h-[55vh] lg:h-[70vh]"
                 src={`https://${upstream}/${file.protected_embed}`}
                 scrolling="no"
-                title={'file.title'}
+                title={'${file.title}'}
                 frameBorder={0}
                 allowFullScreen={true}
             ></iframe>
             <Card className="mx-2 mb-8">
                 <CardHeader>
                     <CardTitle className="text-xl md:text-3xl font-bold">
-                        <h1>{file.title}</h1>
+                        {file.title}
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -160,9 +160,9 @@ export default async function Video({ params }: PageProps) {
                     </div>
                 </CardContent>
             </Card>
-            <h2 className="text-2xl font-bold text-center my-4">
-                Related Videos
-            </h2>
+            <h1 className="text-2xl font-bold text-center my-4">
+                Related Videos {file.title}
+            </h1>
             <SearchCardList query={file.title.split(" ")[0]} />
         </div>
     );
