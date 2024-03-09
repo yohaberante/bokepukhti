@@ -161,7 +161,7 @@ export default async function Video({ params }: PageProps) {
                 </CardContent>
             </Card>
             <h2 className="text-2xl font-bold text-center my-4">
-                Related {file.title}
+                Related Video {file.title}
             </h2>
             <SearchCardList query={file.title.split(" ")[0]} />
         </div>
