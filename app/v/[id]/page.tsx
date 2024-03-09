@@ -89,10 +89,10 @@ export default async function Video({ params }: PageProps) {
                 allowFullScreen={true}
             ></iframe>
             <Card className="mx-2 mb-8">
-                <CardHeader>
+                <CardHeader><h1>
                     <CardTitle className="text-xl md:text-3xl font-bold">
                         {file.title}
-                    </CardTitle>
+                    </CardTitle><h1/>
                 </CardHeader>
                 <CardContent>
                     <div className="grid grid-flow-row lg:grid-flow-col">
@@ -159,9 +159,9 @@ export default async function Video({ params }: PageProps) {
                     </div>
                 </CardContent>
             </Card>
-            <h3 className="text-2xl font-bold text-center my-4">
+            <h2 className="text-2xl font-bold text-center my-4">
                 Related Videos
-            </h3>
+            </h2>
             <SearchCardList query={file.title.split(" ")[0]} />
         </div>
     );
