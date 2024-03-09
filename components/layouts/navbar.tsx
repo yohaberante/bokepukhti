@@ -60,9 +60,9 @@ const SideNav = ({ folders }: { folders: any }) => {
                                 role="menuitem"
                             >
                                 <SheetClose className="flex flex-col transition-colors bg-accent text-accent-foreground px-2 py-1 rounded-md w-full">
-                                    <h1 className="text-xl font-semibold">
+                                    <h2 className="text-xl font-semibold">
                                         {folder.name}
-                                    </h1>
+                                    </h2>
                                     <span className="text-[0.65rem] uppercase text-muted-foreground">
                                         {folder.total_files} videos
                                     </span>
