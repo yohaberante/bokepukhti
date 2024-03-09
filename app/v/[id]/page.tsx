@@ -92,7 +92,7 @@ export default async function Video({ params }: PageProps) {
                 <CardHeader><h1>
                     <CardTitle className="text-xl md:text-3xl font-bold">
                         {file.title}
-                    </CardTitle><h1/>
+                    </CardTitle></h1>
                 </CardHeader>
                 <CardContent>
                     <div className="grid grid-flow-row lg:grid-flow-col">
