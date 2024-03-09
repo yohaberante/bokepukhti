@@ -14,7 +14,7 @@ const CopyButton = ({
     text?: string;
     children?: ReactNode;
 }) => {
-    const textToCopy = text || window.location.href;
+    const textToCopy = text;
 
     const onCopy = () => {
         navigator.clipboard.writeText(textToCopy);
